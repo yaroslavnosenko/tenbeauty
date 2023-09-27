@@ -1,10 +1,4 @@
-import {
-  Box,
-  Container,
-  Heading,
-  SimpleGrid,
-  Text,
-} from '@chakra-ui/react'
+import { Box, Container, Heading, SimpleGrid, Text } from '@chakra-ui/react'
 import Image from 'next/image'
 
 export const Features = () => {
@@ -16,7 +10,7 @@ export const Features = () => {
         <SimpleGrid columns={[1, 3]} gap="4">
           <Box mt="12">
             <Box bg="brand.500" boxSize="20" p="4" rounded="xl">
-              <Image src="/icon3.svg" alt="Nailbar" width={48} height={48} />
+              <Image src="/manicure.png" alt="Nailbar" width={48} height={48} />
             </Box>
             <Heading size="lg" mt="6">
               Manikúra
@@ -29,20 +23,24 @@ export const Features = () => {
 
           <Box mt="12">
             <Box bg="brand.500" boxSize="20" p="4" rounded="xl">
-              <Image src="/icon5.svg" alt="Nailbar" width={48} height={48} />
+              <Image src="/eyebrow.png" alt="Nailbar" width={48} height={48} />
             </Box>
             <Heading size="lg" mt="6">
-              100+ farieb
+              Obočie
             </Heading>
             <Text>
-              Široký výber farieb gél lakov a dizajnov pre tvoje nechty, len
-              kvalitné materiály
+              Naši odborníci zabezpečia perfektný tvar a výraz vašeho obočia
             </Text>
           </Box>
 
           <Box mt="12">
             <Box bg="brand.500" boxSize="20" p="4" rounded="xl">
-              <Image src="/icon1.svg" alt="Nailbar" width={48} height={48} />
+              <Image
+                src="/barber-chair.png"
+                alt="Nailbar"
+                width={48}
+                height={48}
+              />
             </Box>
             <Heading size="lg" mt="6">
               Pedikúra

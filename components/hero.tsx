@@ -20,12 +20,12 @@ export const Hero = () => {
           Life is not perfect, but your nails can be
         </Heading>
         <Text mb="12" color="brand.500" textAlign="center">
-          Alžbetina 18 • Košice
+          Bajkalská 5A • Bratislava
         </Text>
 
         <SimpleGrid columns={[1, 3]} gap={[4, 8]}>
           <Box />
-          <Link href="https://www.fresha.com/a/nail-bar-kosicky-kraj-masiarska-17-fgi2bp0k/booking?menu=true&utm_source=instagram">
+          <Link href="https://www.fresha.com/book-now/nail-bar-gjofwlgb/all-offer?id=1082566&pId=672359">
             <Button
               mb="12"
               w={['full', 'auto']}
@@ -49,7 +49,7 @@ export const Hero = () => {
             transition="ease-in-out 0.5s"
             ratio={1}
           >
-            <Image src="/img1.jpeg" objectFit="cover" />
+            <Image src="/img1.jpeg" objectFit="cover" alt="" />
           </AspectRatio>
           <AspectRatio
             overflow="hidden"
@@ -61,7 +61,7 @@ export const Hero = () => {
             transition="ease-in-out 0.5s"
             ratio={1}
           >
-            <Image src="/img2.jpeg" objectFit="cover" />
+            <Image src="/img2.jpeg" objectFit="cover" alt="" />
           </AspectRatio>
           <AspectRatio
             overflow="hidden"
@@ -73,7 +73,7 @@ export const Hero = () => {
             transition="ease-in-out 0.5s"
             ratio={1}
           >
-            <Image src="/img3.jpeg" objectFit="cover" />
+            <Image src="/img3.jpeg" objectFit="cover" alt="" />
           </AspectRatio>
         </SimpleGrid>
         <Stack
@@ -84,10 +84,10 @@ export const Hero = () => {
         >
           <Box py="2">
             <Heading color="white">
-              Tvoja najlepšia manikúra a pedikúra v Nail Bar
+              Tvoja najlepšia manikúra a pedikúra v Ten Beauty Space
             </Heading>
           </Box>
-          <Link href="https://www.fresha.com/a/nail-bar-kosicky-kraj-masiarska-17-fgi2bp0k/booking?menu=true&utm_source=instagram">
+          <Link href="https://www.fresha.com/book-now/nail-bar-gjofwlgb/all-offer?id=1082566&pId=672359">
             <Button
               w={['full', 'auto']}
               size="lg"
@@ -112,7 +112,7 @@ export const Hero = () => {
           >
             <HStack textAlign="center" justify="space-around">
               <Box>
-                <Heading size="lg">9:00 - 19:00</Heading>
+                <Heading size="lg">8:00 - 20:00</Heading>
                 <Text textTransform="uppercase" opacity="0.7">
                   PON - SOB
                 </Text>

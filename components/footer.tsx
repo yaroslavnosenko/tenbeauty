@@ -22,21 +22,21 @@ export const Footer = () => {
       <Container maxW="container.xl">
         <SimpleGrid columns={[1, 3]}>
           <HStack justify={['center', 'flex-start']} align="flex-start" pt="16">
-            <Image src="/logo.png" alt="Nailbar" width={96} height={96} />
+            <Image src="/logo.jpeg" alt="Nailbar" width={96} height={96} />
           </HStack>
 
           <Box pt="16">
             <HStack mb="6" spacing={4}>
               <Icon as={FiMapPin} boxSize={6} color="brand.500" />
               <Text mb="2" color="white">
-                Alžbetina 18, 040 01 Košice
+                Bajkalská 5A, 831 04 Bratislava
               </Text>
             </HStack>
 
             <HStack mb="6" spacing={4}>
               <Icon as={FiPhone} boxSize={6} color="brand.500" />
               <Text mb="2" color="white">
-                <Link href="tel:+421950207789">+421 950 20 77 89</Link>
+                <Link href="tel:+421950488138">+421 950 488 138</Link>
               </Text>
             </HStack>
 
@@ -62,13 +62,16 @@ export const Footer = () => {
             >
               <Icon as={FiFacebook} boxSize={6} color="brand.500" />
             </Link>
-            <Link target="_blank" href="https://instagram.com/nailbar.skk">
+            <Link
+              target="_blank"
+              href="https://www.instagram.com/ten.beauty.space_bratislava/"
+            >
               <Icon as={FiInstagram} boxSize={6} color="brand.500" />
             </Link>
           </HStack>
         </SimpleGrid>
         <Box pt="16" pb="8" textAlign="center" color="white">
-          © Copyright {new Date().getFullYear()} nailbar.sk
+          © Copyright {new Date().getFullYear()} tenbeauty.sk
         </Box>
       </Container>
     </Box>

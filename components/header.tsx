@@ -8,7 +8,7 @@ export const Header = () => {
       <Container maxWidth="container.xl">
         <HStack spacing="0" justify="space-between">
           <Link href="/">
-            <Image src="/logo.png" alt="Nailbar" width={196} height={196} />
+            <Image src="/logo.jpeg" alt="Nailbar" width={196} height={196} />
           </Link>
           <HStack spacing={6}>
             <Link
@@ -17,7 +17,10 @@ export const Header = () => {
             >
               <Icon as={FiFacebook} boxSize={10} color="brand.500" />
             </Link>
-            <Link target="_blank" href="https://instagram.com/nailbar.skk">
+            <Link
+              target="_blank"
+              href="https://www.instagram.com/ten.beauty.space_bratislava/"
+            >
               <Icon as={FiInstagram} boxSize={10} color="brand.500" />
             </Link>
           </HStack>
