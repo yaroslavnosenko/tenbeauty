@@ -3,14 +3,17 @@ import HHead from 'next/head'
 export const Head = () => {
   return (
     <HHead>
-      <title>Ten Beauty Space</title>
+      <title>Ten Beauty Space | Manikúra, Pedikúra, Obočie</title>
       <meta
         name="description"
         content="Ten Beauty Space - manikúra, pedikúra, nechtové štúdio"
       />
       <link rel="icon" href="/favicon.ico" />
 
-      <meta property="og:title" content="Ten Beauty Space" />
+      <meta
+        property="og:title"
+        content="Ten Beauty Space | Manikúra, Pedikúra, Obočie"
+      />
       <meta property="og:url" content="https://tenbeauty.sk" />
       <meta
         property="og:description"

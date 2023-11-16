@@ -20,7 +20,7 @@ export const Footer = () => {
   return (
     <Box as="footer" bg="gray.900">
       <Container maxW="container.xl">
-        <SimpleGrid columns={[1, 3]}>
+        <SimpleGrid columns={{ sm: 1, md: 3 }}>
           <HStack justify={['center', 'flex-start']} align="flex-start" pt="16">
             <Image src="/logo.jpeg" alt="Nailbar" width={96} height={96} />
           </HStack>

@@ -7,7 +7,7 @@ export const Features = () => {
       <Container maxW="container.xl">
         <Heading>Čo môžeš od nás očakávať?</Heading>
 
-        <SimpleGrid columns={[1, 3]} gap="4">
+        <SimpleGrid columns={{ sm: 1, md: 3 }} gap="4">
           <Box mt="12">
             <Box bg="brand.500" boxSize="20" p="4" rounded="xl">
               <Image src="/manicure.png" alt="Nailbar" width={48} height={48} />
