@@ -7,17 +7,22 @@ export const Features = () => {
       <Container maxW="container.xl">
         <Heading>Čo môžeš od nás očakávať?</Heading>
 
-        <SimpleGrid columns={{ sm: 1, md: 3 }} gap="4">
+        <SimpleGrid columns={{ sm: 1, md: 3 }} gap={{ sm: 6, md: 16 }}>
           <Box mt="12">
             <Box bg="brand.500" boxSize="20" p="4" rounded="xl">
               <Image src="/manicure.png" alt="Nailbar" width={48} height={48} />
             </Box>
-            <Heading size="lg" mt="6">
+            <Heading size="lg" mt="6" mb={4}>
               Manikúra
             </Heading>
             <Text>
-              100% sterilizácia prístrojov, jednorázový spotrebný materiál,
-              profesionálny prístup
+              V našom štúdiu krásy Ten Beauty Space ponúkame širokú škálu
+              služieb pre nechtovú starostlivosť. Venujeme sa klasickým
+              manikúram, elegantným francúzskym manikúram a predĺženiu nechtov
+              pomocou gélových nechtov. Naši odborníci majú skúsenosti s
+              japonskou manikúrou, čo znamená, že vaše nechty budú nielen
+              krásne, ale aj zdravé. Staňte sa s nami kráľovnou svojich nechtov
+              a objavte svet dokonalej nechtovej starostlivosti v našom štúdiu.
             </Text>
           </Box>
 
@@ -25,11 +30,18 @@ export const Features = () => {
             <Box bg="brand.500" boxSize="20" p="4" rounded="xl">
               <Image src="/eyebrow.png" alt="Nailbar" width={48} height={48} />
             </Box>
-            <Heading size="lg" mt="6">
+            <Heading size="lg" mt="6" mb={4}>
               Obočie
             </Heading>
             <Text>
-              Naši odborníci zabezpečia perfektný tvar a výraz vašeho obočia
+              V našom štúdiu krásy Ten Beauty Space sa venujeme dokonalému
+              rámčeku pre vašu tvár. Poskytujeme špecializované služby pre
+              obočie a mihalnice vrátane precízneho formovania obočia, laminácie
+              obočia na dotykový vzhľad, korekcie a farebného oživenia. Naši
+              odborníci zdôraznia vašu prirodzenú krásu a prispôsobia služby
+              presne vašim individuálnym potrebám. Doprajte si bezchybný pohľad
+              a zvýraznite výraz svojich očí s našimi špičkovými službami pre
+              obočie a mihalnice.
             </Text>
           </Box>
 
@@ -42,12 +54,16 @@ export const Features = () => {
                 height={48}
               />
             </Box>
-            <Heading size="lg" mt="6">
+            <Heading size="lg" mt="6" mb={4}>
               Pedikúra
             </Heading>
             <Text>
-              Suchá pedikúra. Úplná relaxácia a starostlivosť o tvoje nohy a
-              nechty
+              V Ten Beauty Space sa venujeme komplexnej starostlivosti o nechty
+              a nohy. Ponúkame profesionálny pedikúr, ktorý zahrňuje krásne
+              nechty, aplikáciu gélových nechtov a osviežujúci masáž chodidiel.
+              Nie je to len o ženách - máme špeciálne pedikúry pre mužov, ktoré
+              zdôrazňujú starostlivosť o nohy s eleganciou. Uvoľnite sa a
+              doprajte svojim nohám kvalitnú starostlivosť v našom štúdiu.
             </Text>
           </Box>
         </SimpleGrid>

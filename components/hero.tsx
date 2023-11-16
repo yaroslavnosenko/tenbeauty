@@ -14,6 +14,8 @@ import Link from 'next/link'
 import NextImage from 'next/image'
 
 export const Hero = () => {
+  const FRESHA_LINK =
+    'https://www.fresha.com/book-now/nail-bar-gjofwlgb/all-offer?id=1082566&pId=672359'
   return (
     <Box as="section" pt={{ sm: 8, md: 2 }}>
       <Container maxW="container.xl" pb="28">
@@ -26,7 +28,7 @@ export const Hero = () => {
 
         <SimpleGrid columns={{ md: 3 }} gap={[4, 8]}>
           <Box />
-          <Link href="https://www.fresha.com/book-now/nail-bar-gjofwlgb/all-offer?id=1082566&pId=672359">
+          <Link href={FRESHA_LINK}>
             <Button
               mb="12"
               w={['full', 'full', 'auto']}
@@ -56,9 +58,20 @@ export const Hero = () => {
                 height={48}
               />
             </Box>
-            <Heading size="lg" mt="6" mb="4" textDecoration="underline">
-              Manikúra
-            </Heading>
+            <Link href={FRESHA_LINK}>
+              <Heading
+                size="lg"
+                mt="6"
+                mb="4"
+                textDecoration="underline"
+                cursor="pointer"
+                _hover={{
+                  textDecoration: 'none',
+                }}
+              >
+                Manikúra
+              </Heading>
+            </Link>
             <Text>
               100% sterilizácia prístrojov, jednorázový spotrebný materiál,
               profesionálny prístup
@@ -81,9 +94,20 @@ export const Hero = () => {
                 height={48}
               />
             </Box>
-            <Heading size="lg" mt="6" mb="4" textDecoration="underline">
-              Obočie
-            </Heading>
+            <Link href={FRESHA_LINK}>
+              <Heading
+                size="lg"
+                mt="6"
+                mb="4"
+                textDecoration="underline"
+                cursor="pointer"
+                _hover={{
+                  textDecoration: 'none',
+                }}
+              >
+                Obočie
+              </Heading>
+            </Link>
             <Text>
               Naši odborníci zabezpečia perfektný tvar a výraz vašeho obočia
             </Text>
@@ -105,9 +129,20 @@ export const Hero = () => {
                 height={48}
               />
             </Box>
-            <Heading size="lg" mt="6" mb="4" textDecoration="underline">
-              Pedikúra
-            </Heading>
+            <Link href={FRESHA_LINK}>
+              <Heading
+                cursor="pointer"
+                size="lg"
+                mt="6"
+                mb="4"
+                textDecoration="underline"
+                _hover={{
+                  textDecoration: 'none',
+                }}
+              >
+                Pedikúra
+              </Heading>
+            </Link>
             <Text>
               Suchá pedikúra. Úplná relaxácia a starostlivosť o tvoje nohy a
               nechty
