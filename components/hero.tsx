@@ -1,5 +1,4 @@
 import {
-  AspectRatio,
   Box,
   Button,
   Container,
@@ -7,18 +6,18 @@ import {
   HStack,
   SimpleGrid,
   Text,
-  Stack,
 } from '@chakra-ui/react'
 import { Image } from '@chakra-ui/react'
 import Link from 'next/link'
 import NextImage from 'next/image'
+import { Carousel } from './carousel'
 
 export const Hero = () => {
   const FRESHA_LINK =
     'https://www.fresha.com/book-now/nail-bar-gjofwlgb/all-offer?id=1082566&pId=672359'
   return (
     <Box as="section" pt={{ sm: 8, md: 2 }}>
-      <Container maxW="container.xl" pb="28">
+      <Container maxW="container.xl">
         <Heading mb="4" color="white" maxW="md" mx="auto" textAlign="center">
           Life is not perfect, but your nails can be
         </Heading>
@@ -26,7 +25,7 @@ export const Hero = () => {
           Bajkalská 5A • Bratislava
         </Text>
 
-        <SimpleGrid columns={{ md: 3 }} gap={[4, 8]}>
+        <SimpleGrid columns={{ md: 3 }} gap={{ sm: 4, md: 16 }}>
           <Box />
           <Link href={FRESHA_LINK}>
             <Button
@@ -41,7 +40,12 @@ export const Hero = () => {
           </Link>
         </SimpleGrid>
 
-        <SimpleGrid columns={{ sm: 1, md: 3 }} gap="4" mb={32} color="white">
+        <SimpleGrid
+          columns={{ sm: 1, md: 3 }}
+          gap={{ sm: 4, md: 16 }}
+          mb={32}
+          color="white"
+        >
           <Box mt="12">
             <Box
               boxSize="20"
@@ -149,41 +153,11 @@ export const Hero = () => {
             </Text>
           </Box>
         </SimpleGrid>
+      </Container>
 
-        <SimpleGrid columns={[1, 3]} gap={[4, 8]}>
-          <AspectRatio
-            overflow="hidden"
-            cursor="pointer"
-            rounded="sm"
-            ratio={1}
-          >
-            <Image src="/img1.jpeg" objectFit="cover" alt="" />
-          </AspectRatio>
-          <AspectRatio
-            overflow="hidden"
-            cursor="pointer"
-            rounded="sm"
-            _hover={{
-              transform: 'scale(1.01)',
-            }}
-            transition="ease-in-out 0.5s"
-            ratio={1}
-          >
-            <Image src="/img2.jpeg" objectFit="cover" alt="" />
-          </AspectRatio>
-          <AspectRatio
-            overflow="hidden"
-            cursor="pointer"
-            rounded="sm"
-            _hover={{
-              transform: 'scale(1.01)',
-            }}
-            transition="ease-in-out 0.5s"
-            ratio={1}
-          >
-            <Image src="/img3.jpeg" objectFit="cover" alt="" />
-          </AspectRatio>
-        </SimpleGrid>
+      <Carousel />
+
+      <Container maxW="container.xl" pb="28">
         <SimpleGrid
           mt="20"
           gap={{ sm: 8, md: 16 }}
