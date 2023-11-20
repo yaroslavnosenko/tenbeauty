@@ -41,61 +41,27 @@ export const Hero = () => {
         </SimpleGrid>
 
         <SimpleGrid
-          columns={{ sm: 1, md: 3 }}
+          columns={{ sm: 3, md: 3 }}
           gap={{ sm: 4, md: 16 }}
           mb={32}
           color="white"
+          textAlign="center"
         >
           <Box mt="12">
             <Box
-              boxSize="20"
+              boxSize="16"
               p="4"
               rounded="xl"
               borderWidth="2px"
               borderColor="brand.500"
               filter="invert(88%) sepia(13%) saturate(4524%) hue-rotate(223deg) brightness(105%) contrast(94%)"
-            >
-              <NextImage
-                src="/manicure.png"
-                alt="Nailbar"
-                width={48}
-                height={48}
-              />
-            </Box>
-            <Link href={FRESHA_LINK}>
-              <Heading
-                size="lg"
-                mt="6"
-                mb="4"
-                textDecoration="underline"
-                cursor="pointer"
-                _hover={{
-                  textDecoration: 'none',
-                }}
-              >
-                Manikúra
-              </Heading>
-            </Link>
-            <Text>
-              100% sterilizácia prístrojov, jednorázový spotrebný materiál,
-              profesionálny prístup
-            </Text>
-          </Box>
-
-          <Box mt="12">
-            <Box
-              boxSize="20"
-              p="4"
-              rounded="xl"
-              borderWidth="2px"
-              borderColor="brand.500"
-              filter="invert(88%) sepia(13%) saturate(4524%) hue-rotate(223deg) brightness(105%) contrast(94%)"
+              mx="auto"
             >
               <NextImage
                 src="/eyebrow.png"
                 alt="Nailbar"
-                width={48}
-                height={48}
+                width={36}
+                height={36}
               />
             </Box>
             <Link href={FRESHA_LINK}>
@@ -112,25 +78,56 @@ export const Hero = () => {
                 Obočie
               </Heading>
             </Link>
-            <Text>
-              Naši odborníci zabezpečia perfektný tvar a výraz vašeho obočia
-            </Text>
           </Box>
 
           <Box mt="12">
             <Box
-              boxSize="20"
+              boxSize="16"
               p="4"
               rounded="xl"
               borderWidth="2px"
               borderColor="brand.500"
               filter="invert(88%) sepia(13%) saturate(4524%) hue-rotate(223deg) brightness(105%) contrast(94%)"
+              mx="auto"
+            >
+              <NextImage
+                src="/manicure.png"
+                alt="Nailbar"
+                width={36}
+                height={36}
+              />
+            </Box>
+            <Link href={FRESHA_LINK}>
+              <Heading
+                size="lg"
+                mt="6"
+                mb="4"
+                textDecoration="underline"
+                cursor="pointer"
+                _hover={{
+                  textDecoration: 'none',
+                }}
+              >
+                Manikúra
+              </Heading>
+            </Link>
+          </Box>
+
+          <Box mt="12">
+            <Box
+              boxSize="16"
+              p="4"
+              rounded="xl"
+              borderWidth="2px"
+              borderColor="brand.500"
+              filter="invert(88%) sepia(13%) saturate(4524%) hue-rotate(223deg) brightness(105%) contrast(94%)"
+              mx="auto"
             >
               <NextImage
                 src="/barber-chair.png"
                 alt="Nailbar"
-                width={48}
-                height={48}
+                width={36}
+                height={36}
               />
             </Box>
             <Link href={FRESHA_LINK}>
@@ -147,10 +144,6 @@ export const Hero = () => {
                 Pedikúra
               </Heading>
             </Link>
-            <Text>
-              Suchá pedikúra. Úplná relaxácia a starostlivosť o tvoje nohy a
-              nechty
-            </Text>
           </Box>
         </SimpleGrid>
       </Container>
@@ -189,15 +182,14 @@ export const Hero = () => {
           >
             <HStack textAlign="center" justify="space-around">
               <Box>
-                <Heading size="lg">8:00 - 20:00</Heading>
+                <Text textTransform="uppercase" opacity="0.7">
+                  Otváracia doba
+                </Text>
+                <Heading size="lg" mt="2">
+                  8:00 - 20:00
+                </Heading>
                 <Text textTransform="uppercase" opacity="0.7">
                   PON - SOB
-                </Text>
-              </Box>
-              <Box>
-                <Heading size="lg">Zatvorené</Heading>
-                <Text textTransform="uppercase" opacity="0.7">
-                  NED
                 </Text>
               </Box>
             </HStack>

@@ -11,16 +11,10 @@ export const Header = () => {
             <Image src="/logo.jpeg" alt="Nailbar" width={112} height={112} />
           </Link>
           <HStack spacing={6}>
-            <Link
-              target="_blank"
-              href="https://www.facebook.com/profile.php?id=100085635908032"
-            >
+            <Link target="_blank" href="tel:+421950488138">
               <Icon as={FiPhone} boxSize={8} color="brand.500" />
             </Link>
-            <Link
-              target="_blank"
-              href="https://www.facebook.com/profile.php?id=100085635908032"
-            >
+            <Link target="_blank" href="mailto:ten.beautyspace@gmail.com">
               <Icon as={FiMail} boxSize={8} color="brand.500" />
             </Link>
             <Link

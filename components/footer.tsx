@@ -43,8 +43,8 @@ export const Footer = () => {
             <HStack spacing={4}>
               <Icon as={FiMail} boxSize={6} color="brand.500" />
               <Text mb="2" color="white">
-                <Link href="mailto:nailbar.skk@gmail.com">
-                  nailbar.skk@gmail.com
+                <Link href="mailto:ten.beautyspace@gmail.com">
+                  ten.beautyspace@gmail.com
                 </Link>
               </Text>
             </HStack>
