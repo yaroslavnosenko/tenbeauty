@@ -18,12 +18,26 @@ export const Hero = () => {
   return (
     <Box as="section" pt={{ sm: 8, md: 2 }}>
       <Container maxW="container.xl">
-        <Heading mb="4" color="white" maxW="md" mx="auto" textAlign="center">
+        <Heading mb="2" color="white" maxW="md" mx="auto" textAlign="center">
           Life is not perfect, but your nails can be
         </Heading>
-        <Text mb="12" color="brand.500" textAlign="center">
+        <Text color="gray.400" textAlign="center">
           Bajkalská 5A • Bratislava
         </Text>
+
+        <Box py="10" textAlign="center">
+          <Text
+            color="brand.500"
+            fontWeight="bold"
+            textTransform="uppercase"
+            fontSize="3xl"
+          >
+            -30% na vašu prvú návštevu
+          </Text>
+          <Text color="gray.400" fontSize="sm">
+            * obočia -15% na prvú návštevu
+          </Text>
+        </Box>
 
         <SimpleGrid columns={{ md: 3 }} gap={{ sm: 4, md: 16 }}>
           <Box />
@@ -41,9 +55,9 @@ export const Hero = () => {
         </SimpleGrid>
 
         <SimpleGrid
-          columns={{ sm: 3, md: 3 }}
+          columns={3}
           gap={{ sm: 4, md: 16 }}
-          mb={32}
+          mb={24}
           color="white"
           textAlign="center"
         >
@@ -66,7 +80,7 @@ export const Hero = () => {
             </Box>
             <Link href={FRESHA_LINK}>
               <Heading
-                size="lg"
+                size={{ xs: 'md', md: 'lg' }}
                 mt="6"
                 mb="4"
                 textDecoration="underline"
@@ -99,7 +113,7 @@ export const Hero = () => {
             </Box>
             <Link href={FRESHA_LINK}>
               <Heading
-                size="lg"
+                size={{ xs: 'md', md: 'lg' }}
                 mt="6"
                 mb="4"
                 textDecoration="underline"
@@ -133,7 +147,7 @@ export const Hero = () => {
             <Link href={FRESHA_LINK}>
               <Heading
                 cursor="pointer"
-                size="lg"
+                size={{ xs: 'md', md: 'lg' }}
                 mt="6"
                 mb="4"
                 textDecoration="underline"
