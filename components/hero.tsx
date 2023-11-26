@@ -6,8 +6,8 @@ import {
   HStack,
   SimpleGrid,
   Text,
+  Link as FLink,
 } from '@chakra-ui/react'
-import { Image } from '@chakra-ui/react'
 import Link from 'next/link'
 import NextImage from 'next/image'
 import { Carousel } from './carousel'
@@ -39,19 +39,35 @@ export const Hero = () => {
           </Text>
         </Box>
 
-        <SimpleGrid columns={{ md: 3 }} gap={{ sm: 4, md: 16 }}>
+        <SimpleGrid
+          columns={[1, 1, 4]}
+          gap={4}
+          justifyContent="center"
+          py={[4, 4, 8]}
+        >
           <Box />
-          <Link href={FRESHA_LINK}>
-            <Button
-              mb="12"
-              w={['full', 'full', 'auto']}
-              size="lg"
-              colorScheme="brand"
-              color="black"
-            >
-              Online rezervácia
-            </Button>
-          </Link>
+          <Button
+            as={FLink}
+            href={FRESHA_LINK}
+            size="lg"
+            colorScheme="brand"
+            color="black"
+            textTransform="none"
+          >
+            Online rezervácia
+          </Button>
+          <Button
+            as={FLink}
+            href={FRESHA_LINK}
+            size="lg"
+            colorScheme="brand"
+            color="white"
+            background={'#ca29f0'}
+            w={{ xs: 'full', md: 'auto' }}
+            textTransform="none"
+          >
+            Cenník
+          </Button>
         </SimpleGrid>
 
         <SimpleGrid
