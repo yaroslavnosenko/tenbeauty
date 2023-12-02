@@ -11,29 +11,145 @@ import {
 import Link from 'next/link'
 import NextImage from 'next/image'
 import { Carousel } from './carousel'
+import { motion } from 'framer-motion'
 
 export const Hero = () => {
   const FRESHA_LINK =
     'https://www.fresha.com/book-now/nail-bar-gjofwlgb/all-offer?id=1082566&pId=672359'
   return (
-    <Box as="section" pt={{ sm: 8, md: 2 }}>
+    <Box as="section" pt={2}>
       <Container maxW="container.xl">
-        <Heading mb="2" color="white" maxW="md" mx="auto" textAlign="center">
-          Life is not perfect, but your nails can be
-        </Heading>
         <Text color="gray.400" textAlign="center">
           Bajkalská 5A • Bratislava
         </Text>
+        <SimpleGrid
+          columns={3}
+          gap={{ sm: 4, md: 16 }}
+          mb={4}
+          mt={12}
+          color="white"
+          textAlign="center"
+        >
+          <Box>
+            <Box
+              boxSize="16"
+              p="4"
+              rounded="xl"
+              borderWidth="2px"
+              borderColor="brand.500"
+              filter="invert(88%) sepia(13%) saturate(4524%) hue-rotate(223deg) brightness(105%) contrast(94%)"
+              mx="auto"
+            >
+              <NextImage
+                src="/eyebrow.png"
+                alt="Nailbar"
+                width={36}
+                height={36}
+              />
+            </Box>
+            <Link href={FRESHA_LINK}>
+              <Heading
+                size={{ xs: 'md', md: 'lg' }}
+                mt="6"
+                mb="4"
+                textDecoration="underline"
+                cursor="pointer"
+                _hover={{
+                  textDecoration: 'none',
+                }}
+              >
+                Obočie
+              </Heading>
+            </Link>
+          </Box>
+
+          <Box>
+            <Box
+              boxSize="16"
+              p="4"
+              rounded="xl"
+              borderWidth="2px"
+              borderColor="brand.500"
+              filter="invert(88%) sepia(13%) saturate(4524%) hue-rotate(223deg) brightness(105%) contrast(94%)"
+              mx="auto"
+            >
+              <NextImage
+                src="/manicure.png"
+                alt="Nailbar"
+                width={36}
+                height={36}
+              />
+            </Box>
+            <Link href={FRESHA_LINK}>
+              <Heading
+                size={{ xs: 'md', md: 'lg' }}
+                mt="6"
+                mb="4"
+                textDecoration="underline"
+                cursor="pointer"
+                _hover={{
+                  textDecoration: 'none',
+                }}
+              >
+                Manikúra
+              </Heading>
+            </Link>
+          </Box>
+
+          <Box>
+            <Box
+              boxSize="16"
+              p="4"
+              rounded="xl"
+              borderWidth="2px"
+              borderColor="brand.500"
+              filter="invert(88%) sepia(13%) saturate(4524%) hue-rotate(223deg) brightness(105%) contrast(94%)"
+              mx="auto"
+            >
+              <NextImage
+                src="/barber-chair.png"
+                alt="Nailbar"
+                width={36}
+                height={36}
+              />
+            </Box>
+            <Link href={FRESHA_LINK}>
+              <Heading
+                cursor="pointer"
+                size={{ xs: 'md', md: 'lg' }}
+                mt="6"
+                mb="4"
+                textDecoration="underline"
+                _hover={{
+                  textDecoration: 'none',
+                }}
+              >
+                Pedikúra
+              </Heading>
+            </Link>
+          </Box>
+        </SimpleGrid>
 
         <Box py="10" textAlign="center">
-          <Text
-            color="brand.500"
-            fontWeight="bold"
-            textTransform="uppercase"
-            fontSize="3xl"
+          <motion.div
+            initial={{ scale: 1 }}
+            animate={{ scale: 1.03 }}
+            transition={{
+              ease: 'linear',
+              duration: 0.5,
+              repeat: Infinity,
+              repeatType: 'mirror',
+            }}
           >
-            -30% na vašu prvú návštevu
-          </Text>
+            <Text
+              color="brand.500"
+              fontWeight="bold"
+              textTransform="uppercase"
+              fontSize="3xl"
+            >
+              -30% na vašu prvú návštevu
+            </Text>
+          </motion.div>
           <Text color="gray.400" fontSize="sm">
             * obočia -15% na prvú návštevu
           </Text>
@@ -69,114 +185,11 @@ export const Hero = () => {
             Cenník
           </Button>
         </SimpleGrid>
-
-        <SimpleGrid
-          columns={3}
-          gap={{ sm: 4, md: 16 }}
-          mb={24}
-          color="white"
-          textAlign="center"
-        >
-          <Box mt="12">
-            <Box
-              boxSize="16"
-              p="4"
-              rounded="xl"
-              borderWidth="2px"
-              borderColor="brand.500"
-              filter="invert(88%) sepia(13%) saturate(4524%) hue-rotate(223deg) brightness(105%) contrast(94%)"
-              mx="auto"
-            >
-              <NextImage
-                src="/eyebrow.png"
-                alt="Nailbar"
-                width={36}
-                height={36}
-              />
-            </Box>
-            <Link href={FRESHA_LINK}>
-              <Heading
-                size={{ xs: 'md', md: 'lg' }}
-                mt="6"
-                mb="4"
-                textDecoration="underline"
-                cursor="pointer"
-                _hover={{
-                  textDecoration: 'none',
-                }}
-              >
-                Obočie
-              </Heading>
-            </Link>
-          </Box>
-
-          <Box mt="12">
-            <Box
-              boxSize="16"
-              p="4"
-              rounded="xl"
-              borderWidth="2px"
-              borderColor="brand.500"
-              filter="invert(88%) sepia(13%) saturate(4524%) hue-rotate(223deg) brightness(105%) contrast(94%)"
-              mx="auto"
-            >
-              <NextImage
-                src="/manicure.png"
-                alt="Nailbar"
-                width={36}
-                height={36}
-              />
-            </Box>
-            <Link href={FRESHA_LINK}>
-              <Heading
-                size={{ xs: 'md', md: 'lg' }}
-                mt="6"
-                mb="4"
-                textDecoration="underline"
-                cursor="pointer"
-                _hover={{
-                  textDecoration: 'none',
-                }}
-              >
-                Manikúra
-              </Heading>
-            </Link>
-          </Box>
-
-          <Box mt="12">
-            <Box
-              boxSize="16"
-              p="4"
-              rounded="xl"
-              borderWidth="2px"
-              borderColor="brand.500"
-              filter="invert(88%) sepia(13%) saturate(4524%) hue-rotate(223deg) brightness(105%) contrast(94%)"
-              mx="auto"
-            >
-              <NextImage
-                src="/barber-chair.png"
-                alt="Nailbar"
-                width={36}
-                height={36}
-              />
-            </Box>
-            <Link href={FRESHA_LINK}>
-              <Heading
-                cursor="pointer"
-                size={{ xs: 'md', md: 'lg' }}
-                mt="6"
-                mb="4"
-                textDecoration="underline"
-                _hover={{
-                  textDecoration: 'none',
-                }}
-              >
-                Pedikúra
-              </Heading>
-            </Link>
-          </Box>
-        </SimpleGrid>
       </Container>
+
+      <Heading my={16} color="white" maxW="md" mx="auto" textAlign="center">
+        Life is not perfect, but your nails can be
+      </Heading>
 
       <Carousel />
 

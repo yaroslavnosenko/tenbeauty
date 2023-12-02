@@ -1,50 +1,43 @@
-import { Box, HStack } from '@chakra-ui/react'
+import { Box, Container, SimpleGrid } from '@chakra-ui/react'
 import Image from 'next/image'
 
 export const Carousel = () => {
   const images = [
-    '/img1.jpeg',
-    '/img2.jpeg',
-    '/img3.jpeg',
-    '/img1.jpeg',
-    '/img2.jpeg',
-    '/img3.jpeg',
+    { src: '/1.jpg', label: 'Obočia od 13€' },
+    { src: '/4.jpg', label: 'Obočia od 13€' },
+    { src: '/6.jpg', label: 'Manikúra od 25€' },
+    { src: '/5.jpg', label: 'Manikúra od 25€' },
+    { src: '/3.jpg', label: 'Pedikura od 33€    ' },
+    { src: '/2.jpg', label: 'Pedikura od 33€ ' },
   ]
 
   return (
-    <HStack overflow="hidden" pos="relative" gap={4}>
-      <HStack className="anim" gap={4} flexWrap="nowrap" flex="0 0 auto">
-        {images.map((src, index) => {
-          return (
-            <Box flex="0 0 320px" key={index}>
-              <Image
-                width="320"
-                height="320"
-                src={src}
-                objectFit="cover"
-                priority
-                alt=""
-              />
+    <Container maxW="container.xl">
+      <SimpleGrid gap={[4, 4, 8]} columns={[2, 2, 3]}>
+        {images.map(({ src, label }, index) => (
+          <Box key={index} position="relative">
+            <Image
+              src={src}
+              height={640}
+              width={640}
+              objectFit={'cover'}
+              alt=""
+            />
+            <Box
+              bg="#ca29f0"
+              pos="absolute"
+              bottom={0}
+              right={3}
+              color={'white'}
+              fontWeight={'bold'}
+              p={2}
+              borderRadius={6}
+            >
+              {label}
             </Box>
-          )
-        })}
-      </HStack>
-      <HStack className="anim" gap={4} flexWrap="nowrap" flex="0 0 auto">
-        {images.map((src, index) => {
-          return (
-            <Box flex="0 0 320px" key={index}>
-              <Image
-                width="320"
-                height="320"
-                src={src}
-                objectFit="cover"
-                alt=""
-                priority
-              />
-            </Box>
-          )
-        })}
-      </HStack>
-    </HStack>
+          </Box>
+        ))}
+      </SimpleGrid>
+    </Container>
   )
 }
