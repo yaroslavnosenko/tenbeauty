@@ -2,16 +2,16 @@ import {
   Box,
   Button,
   Container,
+  Link as FLink,
   Heading,
   HStack,
   SimpleGrid,
   Text,
-  Link as FLink,
 } from '@chakra-ui/react'
-import Link from 'next/link'
-import NextImage from 'next/image'
-import { Carousel } from './carousel'
 import { motion } from 'framer-motion'
+import NextImage from 'next/image'
+import Link from 'next/link'
+import { Carousel } from './carousel'
 
 export const Hero = () => {
   const FRESHA_LINK =
@@ -147,12 +147,10 @@ export const Hero = () => {
               textTransform="uppercase"
               fontSize="3xl"
             >
-              -30% na vašu prvú návštevu
+              Špeciálna cena na prvu navstevu
             </Text>
           </motion.div>
-          <Text color="gray.400" fontSize="sm">
-            * obočia -15% na prvú návštevu
-          </Text>
+          <Text color="white">Manikura a gellak len 25€</Text>
         </Box>
 
         <SimpleGrid
