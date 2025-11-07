@@ -11,14 +11,17 @@ import {
 import { motion } from 'framer-motion'
 import NextImage from 'next/image'
 import Link from 'next/link'
-import { Carousel } from './carousel'
+import { Carousel } from '.'
 
 export const Hero = () => {
   const FRESHA_LINK =
     'https://www.fresha.com/book-now/nail-bar-gjofwlgb/all-offer?id=1082566&pId=672359'
   return (
     <Box as="section" pt={2}>
-      <Container maxW="container.xl">
+      <Container maxW="container.xl" mb={8}>
+        <Heading my={4} color="white" maxW="md" mx="auto" textAlign="center">
+          Life is not perfect, but your nails can be
+        </Heading>
         <Text color="gray.400" textAlign="center">
           Bajkalská 5A • Bratislava
         </Text>
@@ -184,10 +187,6 @@ export const Hero = () => {
           </Button>
         </SimpleGrid>
       </Container>
-
-      <Heading my={16} color="white" maxW="md" mx="auto" textAlign="center">
-        Life is not perfect, but your nails can be
-      </Heading>
 
       <Carousel />
 

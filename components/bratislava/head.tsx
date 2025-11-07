@@ -1,5 +1,4 @@
 import HHead from 'next/head'
-import Script from 'next/script'
 
 export const Head = () => {
   return (
