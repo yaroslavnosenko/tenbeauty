@@ -153,7 +153,6 @@ export const Hero = () => {
               Špeciálna cena na prvu navstevu
             </Text>
           </motion.div>
-          <Text color="white">Manikura a gellak len 25€</Text>
         </Box>
 
         <SimpleGrid
@@ -226,7 +225,7 @@ export const Hero = () => {
                   Otváracia doba
                 </Text>
                 <Heading size="lg" mt="2">
-                  8:00 - 20:00
+                  8:00 - 19:00
                 </Heading>
                 <Text textTransform="uppercase" opacity="0.7">
                   PON - SOB

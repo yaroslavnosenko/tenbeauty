@@ -3,12 +3,12 @@ import Image from 'next/image'
 
 export const Carousel = () => {
   const images = [
-    { src: '/1.jpg', label: 'Obočia od 13€' },
-    { src: '/4.jpg', label: 'Obočia od 13€' },
-    { src: '/6.jpg', label: 'Manikúra od 25€' },
-    { src: '/5.jpg', label: 'Manikúra od 25€' },
-    { src: '/3.jpg', label: 'Pedikura od 33€    ' },
-    { src: '/2.jpg', label: 'Pedikura od 33€ ' },
+    { src: '/1.jpg' },
+    { src: '/4.jpg' },
+    { src: '/6.jpg' },
+    { src: '/5.jpg' },
+    { src: '/3.jpg' },
+    { src: '/2.jpg' },
   ]
 
   return (
@@ -23,18 +23,6 @@ export const Carousel = () => {
               objectFit={'cover'}
               alt=""
             />
-            <Box
-              bg="#ca29f0"
-              pos="absolute"
-              bottom={0}
-              right={3}
-              color={'white'}
-              fontWeight={'bold'}
-              p={2}
-              borderRadius={6}
-            >
-              {label}
-            </Box>
           </Box>
         ))}
       </SimpleGrid>
