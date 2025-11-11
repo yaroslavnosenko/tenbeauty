@@ -14,7 +14,7 @@ export const Carousel = () => {
   return (
     <Container maxW="container.xl">
       <SimpleGrid gap={[4, 4, 8]} columns={[2, 2, 3]}>
-        {images.map(({ src, label }, index) => (
+        {images.map(({ src }, index) => (
           <Box key={index} position="relative">
             <Image
               src={src}
