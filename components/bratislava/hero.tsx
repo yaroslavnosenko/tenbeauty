@@ -225,7 +225,7 @@ export const Hero = () => {
                   Otváracia doba
                 </Text>
                 <Heading size="lg" mt="2">
-                  8:00 - 19:00
+                  9:00 - 19:00
                 </Heading>
                 <Text textTransform="uppercase" opacity="0.7">
                   PON - SOB

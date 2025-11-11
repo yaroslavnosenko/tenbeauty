@@ -5,11 +5,11 @@ import {
   Container,
   Heading,
   HStack,
+  Image,
   SimpleGrid,
-  Text,
   Stack,
+  Text,
 } from '@chakra-ui/react'
-import { Image } from '@chakra-ui/react'
 import Link from 'next/link'
 
 export const Hero = () => {
@@ -112,7 +112,7 @@ export const Hero = () => {
           >
             <HStack textAlign="center" justify="space-around">
               <Box>
-                <Heading size="lg">8:30-21:00</Heading>
+                <Heading size="lg">9:00 - 19:00</Heading>
                 <Text textTransform="uppercase" opacity="0.7">
                   PON - SOB
                 </Text>
